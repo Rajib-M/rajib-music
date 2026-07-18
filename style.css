@@ -791,9 +791,8 @@ footer{
 }
 
 .footer-logo img{
-    width:90px;
-    margin:auto;
-    margin-bottom:20px;
+    width:180px;
+    height:auto;
 }
 
 footer h3{
