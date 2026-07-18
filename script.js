@@ -1,27 +1,28 @@
-/* ==========================================================
-   Rajib Majumdar Website
+/* ===========================================================
+   Rajib Majumdar Official Website
    script.js
-   ========================================================== */
+   Version 5.0
+=========================================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ==========================================
+    /* ===========================================
        Smooth Scroll Navigation
-    ========================================== */
+    =========================================== */
 
     document.querySelectorAll('a[href^="#"]').forEach(link => {
 
-        link.addEventListener("click", function (e) {
+        link.addEventListener("click", function(e){
+
+            e.preventDefault();
 
             const target = document.querySelector(this.getAttribute("href"));
 
-            if (target) {
-
-                e.preventDefault();
+            if(target){
 
                 target.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
+                    behavior:"smooth",
+                    block:"start"
                 });
 
             }
@@ -30,102 +31,130 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-
-    /* ==========================================
-       Back To Top Button
-    ========================================== */
-
-    const topBtn = document.getElementById("topBtn");
-
-    function handleScroll() {
-
-        if (!topBtn) return;
-
-        if (window.scrollY > 400) {
-
-            topBtn.style.display = "block";
-
-        } else {
-
-            topBtn.style.display = "none";
-
-        }
-
-    }
-
-    window.addEventListener("scroll", handleScroll);
-
-    if (topBtn) {
-
-        topBtn.addEventListener("click", () => {
-
-            window.scrollTo({
-
-                top: 0,
-                behavior: "smooth"
-
-            });
-
-        });
-
-    }
-
-
-    /* ==========================================
-       Fade-in Animation
-    ========================================== */
-
-    const fadeItems = document.querySelectorAll(".fade-up");
-
-    if ("IntersectionObserver" in window) {
-
-        const observer = new IntersectionObserver((entries) => {
-
-            entries.forEach((entry) => {
-
-                if (entry.isIntersecting) {
-
-                    entry.target.classList.add("show");
-
-                }
-
-            });
-
-        }, {
-            threshold: 0.15
-        });
-
-        fadeItems.forEach(item => observer.observe(item));
-
-    } else {
-
-        fadeItems.forEach(item => item.classList.add("show"));
-
-    }
-
-
-    /* ==========================================
-       Sticky Header
-    ========================================== */
+    /* ===========================================
+       Sticky Header Shadow
+    =========================================== */
 
     const header = document.querySelector("header");
 
-    function stickyHeader() {
+    window.addEventListener("scroll", ()=>{
 
-        if (!header) return;
+        if(window.scrollY > 50){
 
-        if (window.scrollY > 60) {
+            header.classList.add("header-shadow");
 
-            header.classList.add("sticky");
+        }else{
 
-        } else {
-
-            header.classList.remove("sticky");
+            header.classList.remove("header-shadow");
 
         }
 
-    }
+    });
 
-    window.addEventListener("scroll", stickyHeader);
+    /* ===========================================
+       Fade In Sections
+    =========================================== */
+
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver((entries)=>{
+
+        entries.forEach(entry=>{
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },{
+        threshold:0.15
+    });
+
+    sections.forEach(section=>{
+
+        section.classList.add("hidden");
+
+        observer.observe(section);
+
+    });
+
+    /* ===========================================
+       Active Navigation
+    =========================================== */
+
+    const navLinks=document.querySelectorAll("nav a");
+
+    window.addEventListener("scroll",()=>{
+
+        let current="";
+
+        sections.forEach(section=>{
+
+            const top=section.offsetTop-120;
+
+            if(window.scrollY>=top){
+
+                current=section.getAttribute("id");
+
+            }
+
+        });
+
+        navLinks.forEach(link=>{
+
+            link.classList.remove("active");
+
+            if(link.getAttribute("href")==="#"+current){
+
+                link.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+    /* ===========================================
+       Scroll To Top Button
+    =========================================== */
+
+    const topButton=document.createElement("button");
+
+    topButton.innerHTML="↑";
+
+    topButton.id="scrollTop";
+
+    document.body.appendChild(topButton);
+
+    topButton.style.display="none";
+
+    window.addEventListener("scroll",()=>{
+
+        if(window.scrollY>500){
+
+            topButton.style.display="block";
+
+        }else{
+
+            topButton.style.display="none";
+
+        }
+
+    });
+
+    topButton.addEventListener("click",()=>{
+
+        window.scrollTo({
+
+            top:0,
+
+            behavior:"smooth"
+
+        });
+
+    });
 
 });
