@@ -68,7 +68,7 @@ HEADER
 
     justify-content:space-between;
 
-    height:72px;
+    height:88px;
 
 }
 
@@ -78,7 +78,7 @@ HEADER
 
 .logo img{
 
-    height:52px;
+    height:56px;
 
     width:auto;
 
@@ -106,7 +106,7 @@ HEADER
 
     color:#333;
 
-    font-size:15px;
+    font-size:18px;
 
     font-weight:500;
 
@@ -140,7 +140,7 @@ HEADER
 
     width:22px;
 
-    height:22px;
+    height:24px;
 
     transition:.25s;
 
