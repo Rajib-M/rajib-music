@@ -1746,7 +1746,16 @@ REDUCE MOTION
     font-size:24px;
     margin-bottom:20px;
 }
+/* Contact heading only */
+.contact .section-header h2{
+    font-size:32px;
+    margin-bottom:10px;
+    line-height:1.2;
+}
 
+.contact .section-header{
+    margin-bottom:25px;
+}
 
 /*=========================================================
 END OF STYLE.CSS
