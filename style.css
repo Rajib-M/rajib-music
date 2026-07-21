@@ -351,49 +351,32 @@ HERO
 =========================================================*/
 
 .hero{
-
     background:#FCFAF6;
-
-    padding:20px 0;
-
+    padding:50px 0 35px;
 }
 
 .hero-wrapper{
-
     display:grid;
-
-    grid-template-columns:40% 60%;
-
+    grid-template-columns:42% 58%;
     align-items:center;
-
-    gap:15px;
-
+    gap:25px;
 }
+
 
 /*=========================================================
 LEFT CONTENT
 =========================================================*/
-
 .hero-left{
-
-    max-width:620px;
-
+    max-width:680px;
 }
-
 /*=========================================================
 BRAND LOGO
 =========================================================*/
 
 .hero-brand{
-
-    width:340px;
-
+    width:300px;
     max-width:100%;
-
-    height:auto;
-
-    margin-bottom:8px;
-
+    margin-bottom:12px;
 }
 
 
