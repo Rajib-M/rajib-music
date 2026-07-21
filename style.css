@@ -354,7 +354,7 @@ HERO
 
     background:#FCFAF6;
 
-    padding:35px 0 25px;
+    padding:20px 0;
 
 }
 
@@ -386,13 +386,13 @@ BRAND LOGO
 
 .hero-brand{
 
-    width:420px;
+    width:340px;
 
     max-width:100%;
 
     height:auto;
 
-    margin-bottom:10px;
+    margin-bottom:8px;
 
 }
 
@@ -493,7 +493,7 @@ HERO IMAGE
 
     width:100%;
 
-    max-width:650px;
+    max-width:700px;
 
     border-radius:24px;
 
