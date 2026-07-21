@@ -1424,8 +1424,13 @@ MOBILE
     }
 
     .section-header h2{
-
-        font-size:32px;
+    font-family:'Cinzel', serif;
+    font-size:24px;
+    font-weight:600;
+    line-height:1.2;
+    margin-bottom:12px;
+}
+    
 
     }
 
