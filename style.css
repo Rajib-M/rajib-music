@@ -534,16 +534,11 @@ LISTEN EVERYWHERE
 }
 
 .listen-title{
-
-    font-family:'Cinzel',serif;
-
-    font-size:36px;
-
-    color:#222;
-
-    margin-bottom:6px;
-
+    font-size:24px;
+    font-weight:600;
+    letter-spacing:1px;
 }
+
 
 .platform-row{
 
@@ -653,20 +648,10 @@ TOP RATED SONGS
 }
 
 .song-card h3{
-
-    padding:18px 16px 10px;
-
-    text-align:center;
-
     font-size:18px;
-
     font-weight:600;
-
-    color:#222;
-
-    min-height:72px;
-
 }
+
 
 .song-btn{
 
