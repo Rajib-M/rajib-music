@@ -2011,9 +2011,12 @@ FOOTER
 
 }
 
-.footer-logo img{
+.footer-logo{
 
     height:65px !important;
+
+    width:auto;
+
 
 }
 
