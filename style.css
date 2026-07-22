@@ -1541,9 +1541,9 @@ FOOTER
     border-radius:50%;
 
    background:#ffffff;
-
-    border:1px solid #ddd;
-
+   border:1px solid #ddd;
+   box-shadow:0 0 12px rgba(199,164,77,.35);
+    
     transition:.30s;
 
 }
@@ -1552,6 +1552,9 @@ FOOTER
 
     background:#C7A44D;
 
+    box-shadow:0 0 20px rgba(199,164,77,.7);
+
+}
     transform:translateY(-3px);
 
 }
