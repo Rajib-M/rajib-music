@@ -1485,13 +1485,15 @@ FOOTER
 
 }
 
-.footer-logo img{
+.footer-logo{
 
-    height:70px;
+    height:65px;
 
-    margin:auto;
+    width:auto;
 
-    margin-bottom:14px;
+    display:block;
+
+    margin:0 auto 14px;
 
 }
 
