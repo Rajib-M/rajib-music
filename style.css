@@ -1540,7 +1540,9 @@ FOOTER
 
     border-radius:50%;
 
-    background:#333;
+   background:#ffffff;
+
+    border:1px solid #ddd;
 
     transition:.30s;
 
