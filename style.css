@@ -1,0 +1,2069 @@
+/*=========================================================
+RAJIB MAJUMDAR
+OFFICIAL WEBSITE
+VERSION 12
+PART 2A
+GLOBAL + HEADER
+=========================================================*/
+
+/*=========================================================
+RESET
+=========================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#FCFAF6;
+
+    color:#222;
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+/*=========================================================
+ROOT
+=========================================================*/
+
+:root{
+
+    --gold:#C7A44D;
+
+    --gold-dark:#A9852F;
+
+    --white:#FFFFFF;
+
+    --light:#FCFAF6;
+
+    --text:#555;
+
+    --radius:18px;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --transition:.30s ease;
+
+}
+
+/*=========================================================
+COMMON
+=========================================================*/
+
+.container{
+
+    width:min(1180px,92%);
+
+    margin:auto;
+
+}
+
+section{
+
+    padding:65px 0;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/*=========================================================
+BUTTONS
+=========================================================*/
+
+.btn-primary,
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:13px 30px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary{
+
+    background:var(--gold);
+
+    color:#fff;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--gold-dark);
+
+}
+
+.btn-secondary{
+
+    border:2px solid var(--gold);
+
+    color:var(--gold);
+
+    background:#fff;
+
+}
+
+.btn-secondary:hover{
+
+    background:var(--gold);
+
+    color:#fff;
+
+}
+
+/*=========================================================
+SECTION TITLE
+=========================================================*/
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+}
+
+.section-header h2{
+
+    font-family:'Cinzel',serif;
+
+    font-size:28px;
+
+    font-weight:600;
+
+}
+
+.view-all{
+
+    color:var(--gold);
+
+    font-weight:600;
+
+}
+
+.view-all:hover{
+
+    color:var(--gold-dark);
+
+}
+
+/*=========================================================
+HEADER
+=========================================================*/
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    background:#FFFFFF;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+
+}
+
+.header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    height:90px;
+
+}
+
+/*=========================================================
+LOGO
+=========================================================*/
+
+.logo img{
+
+    height:68px;
+
+    width:auto;
+
+}
+
+/*=========================================================
+NAVIGATION
+=========================================================*/
+
+.navbar ul{
+
+    display:flex;
+
+    gap:32px;
+
+}
+
+.navbar a{
+
+    color:#333;
+
+    font-weight:500;
+
+    transition:.30s;
+
+}
+
+.navbar a:hover,
+.navbar a.active{
+
+    color:var(--gold);
+
+}
+
+/*=========================================================
+HEADER SOCIAL
+=========================================================*/
+
+.social-header{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+.social-header a{
+
+    width:40px;
+
+    height:40px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    border:1px solid #E8DFCF;
+
+    background:#fff;
+
+    transition:.30s;
+
+}
+
+.social-header img{
+
+    width:22px;
+
+    height:22px;
+
+}
+
+.social-header a:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================================
+MOBILE MENU
+=========================================================*/
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:30px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+}
+
+/*=========================================================
+TABLET
+=========================================================*/
+
+@media (max-width:992px){
+
+.navbar{
+
+display:none;
+
+}
+
+.menu-toggle{
+
+display:block;
+
+}
+
+.logo img{
+
+height:58px;
+
+}
+
+}
+
+/*=========================================================
+MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+.header .container{
+
+height:78px;
+
+}
+
+.logo img{
+
+height:54px;
+
+}
+
+.social-header{
+
+display:none;
+
+}
+
+section{
+
+padding:45px 0;
+
+}
+
+}/*=========================================================
+PART 2B
+HERO + LISTEN EVERYWHERE
+VERSION 12
+=========================================================*/
+
+
+/*=========================================================
+HERO
+=========================================================*/
+
+.hero{
+
+    background:#FCFAF6;
+
+    padding:40px 0 30px;
+
+}
+
+.hero-wrapper{
+
+    display:grid;
+
+    grid-template-columns:42% 58%;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.hero-left{
+
+    max-width:520px;
+
+}
+
+/*=========================================================
+HERO LOGO
+=========================================================*/
+
+.hero-brand{
+
+    width:340px;
+
+    max-width:100%;
+
+    margin-bottom:18px;
+
+}
+
+/*=========================================================
+TAGLINE
+=========================================================*/
+
+.hero h2{
+
+    font-family:'Cinzel',serif;
+
+    font-size:26px;
+
+    color:#A9852F;
+
+    line-height:1.4;
+
+    margin-bottom:20px;
+
+}
+
+/*=========================================================
+DESCRIPTION
+=========================================================*/
+
+.hero p{
+
+    font-size:17px;
+
+    color:#555;
+
+    line-height:1.9;
+
+    margin-bottom:28px;
+
+}
+
+/*=========================================================
+BUTTONS
+=========================================================*/
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/*=========================================================
+RIGHT IMAGE
+=========================================================*/
+
+.hero-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-right img{
+
+    width:100%;
+
+    max-width:540px;
+
+    height:auto;
+
+    border-radius:22px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.10);
+
+    transition:.30s;
+
+}
+
+.hero-right img:hover{
+
+    transform:translateY(-4px);
+
+}
+
+/*=========================================================
+LISTEN EVERYWHERE
+=========================================================*/
+
+.listen-everywhere{
+
+    background:#FFFFFF;
+
+    padding:12px 0;
+
+    border-top:1px solid #ECE4D5;
+
+    border-bottom:1px solid #ECE4D5;
+
+}
+
+.listen-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.listen-title{
+
+    font-family:'Cinzel',serif;
+
+    font-size:22px;
+
+    margin-bottom:16px;
+
+    color:#333;
+
+}
+
+.platform-row{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:16px;
+
+}
+
+.platform-row a{
+
+    width:60px;
+
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:#fff;
+
+    border:1px solid #E8DFCF;
+
+    transition:.30s;
+
+}
+
+.platform-row a:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.platform-row img{
+
+    width:34px;
+
+    height:34px;
+
+    object-fit:contain;
+
+}
+
+/*=========================================================
+TABLET
+=========================================================*/
+
+@media (max-width:992px){
+
+.hero-wrapper{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-left{
+
+max-width:100%;
+
+}
+
+.hero-brand{
+
+margin:auto auto 18px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-right{
+
+margin-top:30px;
+
+}
+
+}
+
+/*=========================================================
+MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+.hero{
+
+padding:30px 0 20px;
+
+}
+
+.hero-brand{
+
+width:240px;
+
+}
+
+.hero h2{
+
+font-size:20px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.hero-right img{
+
+max-width:360px;
+
+}
+
+.listen-title{
+
+font-size:18px;
+
+}
+
+.platform-row a{
+
+width:52px;
+
+height:52px;
+
+}
+
+.platform-row img{
+
+width:28px;
+
+height:28px;
+
+}
+
+}/*=========================================================
+PART 2C
+LISTEN EVERYWHERE + TOP RATED SONGS
+VERSION 12
+=========================================================*/
+
+/*=========================================================
+LISTEN EVERYWHERE
+=========================================================*/
+
+.listen-everywhere{
+
+    background:#FFFFFF;
+
+    padding:14px 0;
+
+    border-top:1px solid #ECE4D5;
+
+    border-bottom:1px solid #ECE4D5;
+
+}
+
+.listen-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.listen-title{
+
+    font-family:'Cinzel',serif;
+
+    font-size:22px;
+
+    margin-bottom:18px;
+
+    color:#333;
+
+}
+
+.platform-row{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+.platform-row a{
+
+    width:56px;
+
+    height:56px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#FFF;
+
+    border:1px solid #E8DFCF;
+
+    border-radius:16px;
+
+    transition:.30s;
+
+}
+
+.platform-row img{
+
+    width:30px;
+
+    height:30px;
+
+    object-fit:contain;
+
+}
+
+.platform-row a:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+/*=========================================================
+TOP RATED SONGS
+=========================================================*/
+
+.top-songs{
+
+    background:#FCFAF6;
+
+    padding:55px 0;
+
+}
+
+.song-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,220px);
+
+    justify-content:center;
+
+    gap:26px;
+
+}
+
+/*=========================================================
+CARD
+=========================================================*/
+
+.song-card{
+
+    width:220px;
+
+    background:#FFF;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+
+    transition:.30s;
+
+}
+
+.song-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.song-card img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.song-card h3{
+
+    padding:16px 14px 8px;
+
+    font-size:17px;
+
+    text-align:center;
+
+    color:#222;
+
+    min-height:56px;
+
+}
+
+.song-btn{
+
+    display:block;
+
+    margin:0 14px 18px;
+
+    padding:11px;
+
+    text-align:center;
+
+    background:#C7A44D;
+
+    color:#FFF;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+    transition:.30s;
+
+}
+
+.song-btn:hover{
+
+    background:#A9852F;
+
+}
+
+/*=========================================================
+TABLET
+=========================================================*/
+
+@media(max-width:992px){
+
+.song-grid{
+
+grid-template-columns:repeat(2,220px);
+
+gap:24px;
+
+}
+
+}
+
+/*=========================================================
+MOBILE
+=========================================================*/
+
+@media(max-width:768px){
+
+.song-grid{
+
+grid-template-columns:1fr;
+
+justify-items:center;
+
+}
+
+.song-card{
+
+width:220px;
+
+}
+
+.song-card img{
+
+width:220px;
+
+height:220px;
+
+}
+
+.listen-title{
+
+font-size:18px;
+
+}
+
+.platform-row a{
+
+width:48px;
+
+height:48px;
+
+}
+
+.platform-row img{
+
+width:26px;
+
+height:26px;
+
+}
+
+}/*=========================================================
+PART 2D
+LATEST RELEASE + ABOUT + GALLERY
+VERSION 12
+=========================================================*/
+
+/*=========================================================
+LATEST RELEASE
+(KEEP THIS SIZE - MASTER REFERENCE)
+=========================================================*/
+
+.latest-release{
+
+    background:#FFFFFF;
+
+    padding:60px 0;
+
+}
+
+.release-wrapper{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+}
+
+.release-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.release-image img{
+
+    width:320px;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+.release-label{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    border:1px solid #E8DFCF;
+
+    color:#C7A44D;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    margin-bottom:16px;
+
+}
+
+.release-content h2{
+
+    font-family:'Cinzel',serif;
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+}
+
+.release-content p{
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:26px;
+
+}
+
+/*=========================================================
+ABOUT
+=========================================================*/
+
+.about{
+
+    background:#FCFAF6;
+
+    padding:60px 0;
+
+}
+
+.about-wrapper{
+
+    display:grid;
+
+    grid-template-columns:240px 1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+.about-photo{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.about-photo img{
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #FFFFFF;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.about-content p{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    color:#555;
+
+    margin-bottom:18px;
+
+}
+
+/*=========================================================
+ABOUT STATISTICS
+=========================================================*/
+
+.about-stats{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+    margin-top:24px;
+
+}
+
+.stat{
+
+    flex:1;
+
+    min-width:150px;
+
+    background:#FFF;
+
+    border-radius:16px;
+
+    padding:18px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+.stat h3{
+
+    font-family:'Cinzel',serif;
+
+    color:#C7A44D;
+
+    font-size:28px;
+
+    margin-bottom:8px;
+
+}
+
+.stat span{
+
+    font-size:14px;
+
+    color:#666;
+
+}
+
+/*=========================================================
+GALLERY
+=========================================================*/
+
+.gallery{
+
+    background:#FFFFFF;
+
+    padding:60px 0;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,220px);
+
+    justify-content:center;
+
+    gap:24px;
+
+}
+
+.gallery-card{
+
+    width:220px;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:#FFF;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.30s;
+
+}
+
+.gallery-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.gallery-card img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+/*=========================================================
+TABLET
+=========================================================*/
+
+@media (max-width:992px){
+
+.release-wrapper{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.about-wrapper{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:repeat(2,220px);
+
+}
+
+}
+
+/*=========================================================
+MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+.release-image img{
+
+width:260px;
+
+height:260px;
+
+}
+
+.release-content h2{
+
+font-size:28px;
+
+}
+
+.about-photo img{
+
+width:180px;
+
+height:180px;
+
+}
+
+.gallery-grid{
+
+grid-template-columns:1fr;
+
+justify-items:center;
+
+}
+
+.gallery-card{
+
+width:220px;
+
+}
+
+.gallery-card img{
+
+width:220px;
+
+height:220px;
+
+}
+
+}/*=========================================================
+PART 2E
+LATEST VIDEOS
+CONTACT
+FOOTER
+VERSION 12
+=========================================================*/
+
+
+/*=========================================================
+LATEST VIDEOS
+=========================================================*/
+
+.videos{
+
+    background:#FCFAF6;
+
+    padding:60px 0;
+
+}
+
+.video-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,220px);
+
+    justify-content:center;
+
+    gap:24px;
+
+}
+
+.video-card{
+
+    width:220px;
+
+    background:#FFF;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.30s;
+
+}
+
+.video-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.video-card img{
+
+    width:220px;
+
+    height:124px;
+
+    object-fit:cover;
+
+}
+
+.video-card h3{
+
+    padding:14px;
+
+    font-size:16px;
+
+    text-align:center;
+
+    color:#222;
+
+}
+
+
+/*=========================================================
+GET IN TOUCH
+(COMPACT)
+=========================================================*/
+
+.contact{
+
+    background:#FFFFFF;
+
+    padding:25px 0;
+
+}
+
+.contact .section-header{
+
+    margin-bottom:20px;
+
+}
+
+.contact-grid{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.contact-card{
+
+    min-width:220px;
+
+    background:#FCFAF6;
+
+    border:1px solid #ECE4D5;
+
+    border-radius:14px;
+
+    padding:14px 18px;
+
+    text-align:center;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+}
+
+.contact-card h3{
+
+    font-size:15px;
+
+    color:#C7A44D;
+
+    margin-bottom:6px;
+
+}
+
+.contact-card a,
+.contact-card p{
+
+    font-size:14px;
+
+    color:#555;
+
+    word-break:break-word;
+
+}
+
+
+/*=========================================================
+FOOTER
+=========================================================*/
+
+.footer{
+
+    background:#222;
+
+    color:#FFF;
+
+    padding:35px 0;
+
+    text-align:center;
+
+}
+
+.footer-logo img{
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:14px;
+
+}
+
+.footer h3{
+
+    font-family:'Cinzel',serif;
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.footer-tagline{
+
+    color:#CCCCCC;
+
+    font-size:15px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:16px;
+
+    margin-bottom:18px;
+
+}
+
+.footer-social a{
+
+    width:44px;
+
+    height:44px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#333;
+
+    transition:.30s;
+
+}
+
+.footer-social a:hover{
+
+    background:#C7A44D;
+
+    transform:translateY(-3px);
+
+}
+
+.footer-social img{
+
+    width:22px;
+
+    height:22px;
+
+    object-fit:contain;
+
+}
+
+.copyright{
+
+    font-size:13px;
+
+    color:#BBBBBB;
+
+}
+
+
+/*=========================================================
+TABLET
+=========================================================*/
+
+@media(max-width:992px){
+
+.video-grid{
+
+grid-template-columns:repeat(2,220px);
+
+}
+
+.contact-grid{
+
+flex-direction:column;
+
+}
+
+}
+
+
+/*=========================================================
+MOBILE
+=========================================================*/
+
+@media(max-width:768px){
+
+.video-grid{
+
+grid-template-columns:1fr;
+
+justify-items:center;
+
+}
+
+.video-card{
+
+width:220px;
+
+}
+
+.video-card img{
+
+width:220px;
+
+height:124px;
+
+}
+
+.contact{
+
+padding:20px 0;
+
+}
+
+.contact-card{
+
+width:90%;
+
+max-width:320px;
+
+}
+
+.footer{
+
+padding:28px 0;
+
+}
+
+.footer-logo img{
+
+height:60px;
+
+}
+
+.footer h3{
+
+font-size:20px;
+
+}
+
+.footer-social{
+
+gap:12px;
+
+}
+
+.footer-social a{
+
+width:40px;
+
+height:40px;
+
+}
+
+.footer-social img{
+
+width:20px;
+
+height:20px;
+
+}
+
+}/*=========================================================
+PART 2F
+PREMIUM POLISH
+PERFORMANCE
+MOBILE
+VERSION 12
+=========================================================*/
+
+
+/*=========================================================
+IMAGE OPTIMIZATION
+=========================================================*/
+
+img{
+
+display:block;
+
+max-width:100%;
+
+height:auto;
+
+}
+
+
+/*=========================================================
+SMOOTH HOVER
+=========================================================*/
+
+.song-card,
+.gallery-card,
+.video-card,
+.release-image img,
+.about-photo img{
+
+transition:.35s ease;
+
+will-change:transform;
+
+}
+
+.song-card:hover,
+.gallery-card:hover,
+.video-card:hover{
+
+transform:translateY(-6px);
+
+}
+
+
+/*=========================================================
+BUTTON ANIMATION
+=========================================================*/
+
+.btn-primary,
+.btn-secondary,
+.song-btn{
+
+transition:.30s;
+
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.song-btn:hover{
+
+transform:translateY(-2px);
+
+}
+
+
+/*=========================================================
+HEADER SHADOW
+=========================================================*/
+
+.header.scrolled{
+
+box-shadow:0 10px 30px rgba(0,0,0,.10);
+
+}
+
+
+/*=========================================================
+SECTION SPACING
+=========================================================*/
+
+.hero,
+.top-songs,
+.latest-release,
+.about,
+.gallery,
+.videos{
+
+scroll-margin-top:90px;
+
+}
+
+
+/*=========================================================
+FOCUS
+=========================================================*/
+
+a:focus,
+button:focus{
+
+outline:2px solid #C7A44D;
+
+outline-offset:4px;
+
+}
+
+
+/*=========================================================
+SELECTION
+=========================================================*/
+
+::selection{
+
+background:#C7A44D;
+
+color:#FFF;
+
+}
+
+
+/*=========================================================
+SCROLLBAR
+=========================================================*/
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#F3EFE7;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#C7A44D;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#A9852F;
+
+}
+
+
+/*=========================================================
+FADE ANIMATION
+=========================================================*/
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(30px);
+
+transition:.7s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+
+/*=========================================================
+REDUCE MOTION
+=========================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+*{
+
+animation:none !important;
+
+transition:none !important;
+
+scroll-behavior:auto;
+
+}
+
+}
+
+
+/*=========================================================
+LARGE DESKTOP
+=========================================================*/
+
+@media(min-width:1500px){
+
+.container{
+
+max-width:1320px;
+
+}
+
+}/*=========================================================
+PART 2G
+FINAL OVERRIDES
+DO NOT CHANGE HTML
+=========================================================*/
+
+/*==========================
+CONSISTENT CARD SIZE
+==========================*/
+
+.song-card,
+.gallery-card,
+.video-card{
+
+    width:220px !important;
+    max-width:220px;
+    margin:auto;
+
+}
+
+.song-card img,
+.gallery-card img{
+
+    width:220px !important;
+    height:220px !important;
+    object-fit:cover;
+
+}
+
+.video-card img{
+
+    width:220px !important;
+    height:124px !important;
+    object-fit:cover;
+
+}
+
+/*==========================
+LATEST RELEASE
+MASTER REFERENCE
+==========================*/
+
+.release-image img{
+
+    width:320px !important;
+    height:320px !important;
+    object-fit:cover;
+
+}
+
+/*==========================
+GET IN TOUCH
+VERY COMPACT
+==========================*/
+
+.contact{
+
+    padding:18px 0 !important;
+
+}
+
+.contact-grid{
+
+    gap:12px !important;
+
+}
+
+.contact-card{
+
+    padding:10px 14px !important;
+    min-height:auto;
+
+}
+
+.contact-card h3{
+
+    font-size:14px;
+    margin-bottom:4px;
+
+}
+
+.contact-card p,
+.contact-card a{
+
+    font-size:13px;
+
+}
+
+/*==========================
+SECTION SPACING
+==========================*/
+
+.top-songs,
+.latest-release,
+.about,
+.gallery,
+.videos{
+
+    padding-top:50px !important;
+    padding-bottom:50px !important;
+
+}
+
+/*==========================
+HEADER
+==========================*/
+
+.logo img{
+
+    height:70px !important;
+
+}
+
+/*==========================
+FOOTER
+==========================*/
+
+.footer{
+
+    padding:30px 0 !important;
+
+}
+
+.footer-logo img{
+
+    height:65px !important;
+
+}
+
+/*==========================
+MOBILE
+==========================*/
+
+@media(max-width:768px){
+
+.hero-wrapper{
+
+    gap:20px;
+
+}
+
+.song-grid,
+.gallery-grid,
+.video-grid{
+
+    grid-template-columns:1fr !important;
+    justify-items:center;
+
+}
+
+.release-image img{
+
+    width:260px !important;
+    height:260px !important;
+
+}
+
+.hero-brand{
+
+    width:230px !important;
+
+}
+
+.contact-card{
+
+    width:95%;
+    max-width:320px;
+
+}
+
+.footer-social{
+
+    gap:10px;
+
+}
+
+}
+
+/*==========================
+END OF VERSION 12
+==========================*/
