@@ -1,1 +1,5 @@
+User-agent: *
 
+Allow: /
+
+Sitemap: https://rajib-m.github.io/rajib-music/sitemap.xml
