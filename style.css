@@ -2062,6 +2062,10 @@ MOBILE
 
     gap:10px;
 
+}/* Larger YouTube icon */
+.platform-row img[src*="youtube"]{
+    width:42px !important;
+    height:42px !important;
 }
 
 }/* GET IN TOUCH */
