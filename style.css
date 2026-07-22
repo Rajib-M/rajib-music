@@ -2072,6 +2072,14 @@ MOBILE
     font-size: 30px !important;
     margin-bottom: 20px;
 }
+/* ===== CONTACT HEADING SIZE ===== */
+
+#contact .section-header h2{
+    font-size: 22px !important;
+    font-weight: 600;
+    margin-bottom: 15px !important;
+    line-height: 1.2;
+}
 
 /*==========================
 END OF VERSION 12
