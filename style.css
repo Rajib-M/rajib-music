@@ -171,11 +171,15 @@ SECTION TITLE
 
     font-family:'Cinzel',serif;
 
-    font-size:28px;
+    font-size:22px;
 
     font-weight:600;
 
-}
+}#contact .section-header h2{
+
+    font-size:16px !important;
+
+    font-weight:600;
 
 .view-all{
 
@@ -2077,7 +2081,7 @@ MOBILE
 #contact .section-header h2{
     font-size: 22px !important;
     font-weight: 600;
-    margin-bottom: 15px !important;
+    margin-bottom: 10px !important;
     line-height: 1.2;
 }
 
