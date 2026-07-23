@@ -512,6 +512,18 @@ RIGHT IMAGE
 
 }
 
+.hero-buttons a{
+
+    transition:0.3s ease;
+
+}
+
+.hero-buttons a:hover{
+
+    transform:translateY(-3px);
+
+}
+
 .hero-right img:hover{
 
     transform:translateY(-4px);
