@@ -317,17 +317,13 @@ HEADER SOCIAL
 }
 
    .social-header a:hover{
-
     transform:translateY(-4px);
-
     background:#C7A44D;
-
     border-color:#C7A44D;
+}
 
-     .social-header a:hover img{
-
+.social-header a:hover img{
     filter:brightness(0) invert(1);
-
 }
 /*=========================================================
 MOBILE MENU
