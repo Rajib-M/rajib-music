@@ -428,7 +428,7 @@ HERO LOGO
 
     max-width:100%;
 
-    margin-bottom:22px;
+    margin-bottom:24px;
 
 }
 
@@ -440,13 +440,15 @@ TAGLINE
 
     font-family:'Cinzel',serif;
 
-    font-size:26px;
+    font-size:28px;
+
+    font-weight:700;
 
     color:#A9852F;
 
-    line-height:1.4;
+    line-height:1.5;
 
-    margin-bottom:20px;
+    margin-bottom:22px;
 
 }
 
@@ -456,13 +458,13 @@ DESCRIPTION
 
 .hero p{
 
-    font-size:17px;
+    font-size:18px;
 
     color:#555;
 
     line-height:1.9;
 
-    margin-bottom:28px;
+    margin-bottom:32px;
 
 }
 
@@ -504,7 +506,7 @@ RIGHT IMAGE
 
     border-radius:22px;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.10);
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
 
     transition:.30s;
 
