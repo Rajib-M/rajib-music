@@ -2053,51 +2053,42 @@ MOBILE
 
 @media(max-width:768px){
 
-.hero-wrapper{
+    .hero-wrapper{
+        gap:20px;
+    }
 
-    gap:20px;
+    .song-grid,
+    .gallery-grid,
+    .video-grid{
+        grid-template-columns:1fr !important;
+        justify-items:center;
+    }
 
-}
+    .release-image img{
+        width:260px !important;
+        height:260px !important;
+    }
 
-.song-grid,
-.gallery-grid,
-.video-grid{
+    .hero-brand{
+        width:230px !important;
+    }
 
-    grid-template-columns:1fr !important;
-    justify-items:center;
+    .contact-card{
+        width:95%;
+        max-width:320px;
+    }
 
-}
+    .footer-social{
+        gap:10px;
+    }
 
-.release-image img{
+    .platform-row img[src*="youtube"]{
+        width:48px !important;
+        height:48px !important;
+    }
 
-    width:260px !important;
-    height:260px !important;
+}   /* ← close the 768px media query here */
 
-}
-
-.hero-brand{
-
-    width:230px !important;
-
-}
-
-.contact-card{
-
-    width:95%;
-    max-width:320px;
-
-}
-
-.footer-social{
-
-    gap:10px;
-
-}/* Larger YouTube icon */
-.platform-row img[src*="youtube"]{
-    width:48px !important;
-    height:48px !important;
-}
-    /* MOBILE MENU */
 /* MOBILE MENU */
 
 @media (max-width:992px){
@@ -2122,6 +2113,9 @@ MOBILE
         gap:18px;
         padding:20px;
         text-align:center;
+    }
+
+}
     }
 
 }
