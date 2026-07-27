@@ -419,17 +419,21 @@ HERO
 
     display:grid;
 
-    grid-template-columns:42% 58%;
+    grid-template-columns:45% 55%;
 
     align-items:center;
 
-    gap:50px;
+    gap:80px;
+
+    min-height:85vh;
+
+}
 
 }
 
 .hero-left{
 
-    max-width:560px;
+    max-width:650px;
 
 }
 
@@ -439,31 +443,68 @@ HERO LOGO
 
 .hero-brand{
 
-    width:360px;
+    width:430px;
 
     max-width:100%;
 
-    margin-bottom:24px;
+    margin-bottom:30px;
 
 }
 
 /*=========================================================
+
 TAGLINE
 =========================================================*/
 
-.hero h2{
+.hero-main-title{
 
     font-family:'Cinzel',serif;
 
-    font-size:28px;
+    font-size:54px;
 
     font-weight:700;
 
     color:#A9852F;
 
-    line-height:1.5;
+    line-height:1.1;
 
-    margin-bottom:22px;
+    letter-spacing:2px;
+
+    margin-bottom:10px;
+
+}
+
+.hero-sub-title{
+
+    font-size:24px;
+
+    font-weight:600;
+
+    color:#444;
+
+    margin-bottom:18px;
+
+}
+
+.hero-tagline{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    border:1px solid #D4AF37;
+
+    border-radius:40px;
+
+    background:#FCF8EC;
+
+    color:#A9852F;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    margin-bottom:28px;
 
 }
 
@@ -471,18 +512,17 @@ TAGLINE
 DESCRIPTION
 =========================================================*/
 
-.hero p{
+.hero-left p{
 
-    font-size:18px;
+    font-size:20px;
 
     color:#555;
 
-    line-height:1.9;
+    line-height:2;
 
-    margin-bottom:32px;
+    margin-bottom:36px;
 
 }
-
 /*=========================================================
 BUTTONS
 =========================================================*/
@@ -515,15 +555,15 @@ RIGHT IMAGE
 
     width:100%;
 
-    max-width:540px;
+    max-width:620px;
 
     height:auto;
 
-    border-radius:22px;
+    border-radius:30px;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.12);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
 
-    transition:.30s;
+    transition:.35s;
 
 }
 
@@ -539,6 +579,17 @@ RIGHT IMAGE
 
 }
 
+.hero-footer{
+
+    margin-top:30px;
+
+    font-size:15px;
+
+    color:#777;
+
+    font-weight:500;
+
+}
 .hero-right img:hover{
 
  transform:translateY(-6px) scale(1.01);
@@ -2227,5 +2278,36 @@ PREMIUM HERO
     align-items:center;
 
     gap:80px;
+
+}/*=========================================================
+VERSION 13 HERO - MOBILE
+=========================================================*/
+
+@media (max-width:768px){
+
+.hero-main-title{
+    font-size:36px;
+}
+
+.hero-sub-title{
+    font-size:20px;
+}
+
+.hero-tagline{
+    font-size:13px;
+    padding:8px 18px;
+}
+
+.hero-left p{
+    font-size:16px;
+}
+
+.hero-footer{
+    font-size:13px;
+}
+
+.hero-wrapper{
+    gap:40px;
+}
 
 }
