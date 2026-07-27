@@ -2178,32 +2178,42 @@ END OF VERSION 12
 }/*=========================================================
 VERSION 13 HERO - MOBILE
 =========================================================*/
+/*=========================================================
+VERSION 13 HERO - MOBILE
+=========================================================*/
 
 @media (max-width:768px){
 
 .hero-main-title{
-    font-size:26px;
+    font-size:22px;
+    line-height:1.25;
+    letter-spacing:0;
+    margin:8px 0 4px;
 }
 
 .hero-sub-title{
-    font-size:20px;
+    font-size:16px;
+    margin-bottom:10px;
 }
 
 .hero-tagline{
-    font-size:13px;
-    padding:8px 18px;
+    font-size:12px;
+    padding:7px 16px;
+    margin-bottom:14px;
 }
 
 .hero-left p{
-    font-size:16px;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:18px;
 }
 
-.hero-footer{
-    font-size:13px;
+.hero-brand{
+    width:210px;
+    margin-bottom:10px;
 }
 
 .hero-wrapper{
-    gap:40px;
+    gap:18px;
 }
 
-}
