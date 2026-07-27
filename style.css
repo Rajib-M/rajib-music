@@ -406,12 +406,11 @@ VERSION 12
 /*=========================================================
 HERO
 =========================================================*/
-
 .hero{
 
     background:#FCFAF6;
 
-    padding:60px 0 50px;
+    padding:45px 0;
 
 }
 
@@ -442,7 +441,7 @@ HERO LOGO
 
 .hero-brand{
 
-    width:430px;
+    width:380px;
 
     max-width:100%;
 
@@ -459,15 +458,15 @@ TAGLINE
 
     font-family:'Cinzel',serif;
 
-    font-size:54px;
+    font-size:48px;
 
     font-weight:700;
 
     color:#A9852F;
 
-    line-height:1.1;
+    line-height:1.15;
 
-    letter-spacing:2px;
+    letter-spacing:1px;
 
     margin-bottom:10px;
 
@@ -554,7 +553,7 @@ RIGHT IMAGE
 
     width:100%;
 
-    max-width:620px;
+    max-width:580px;
 
     height:auto;
 
