@@ -457,23 +457,23 @@ HERO LOGO
 
 TAGLINE
 =========================================================*/
-
 .hero-main-title{
 
     font-family:'Cinzel',serif;
 
-    font-size:32px;
+    font-size:22px;
 
     font-weight:700;
 
     color:#A9852F;
 
-    line-height:1.2;
+    line-height:1.15;
 
-    letter-spacing:0;
+    letter-spacing:0.8px;
 
-    margin:4px 0 6px;
+    margin:6px 0 8px;
 
+    white-space:nowrap;
 
 }
 
