@@ -436,16 +436,18 @@ HERO
 /*=========================================================
 HERO LOGO
 =========================================================*/
-
 .hero-brand{
 
-    width:380px;
+    width:330px;
 
     max-width:100%;
 
-    margin-bottom:14px;
+    margin:0 0 6px;
+
+    display:block;
 
 }
+
 
 /*=========================================================
 
@@ -466,7 +468,7 @@ TAGLINE
 
     letter-spacing:0;
 
-    margin:12px 0 6px;
+    margin:4px 0 6px;
 
 
 }
