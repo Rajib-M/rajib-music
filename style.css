@@ -434,7 +434,13 @@ HERO
 
     max-width:650px;
 
-    margin-top:-30px;
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
 
 }
 /*=========================================================
@@ -442,11 +448,11 @@ HERO LOGO
 =========================================================*/
 .hero-brand{
 
-    width:290px;
+    width:300px;
 
     max-width:100%;
 
-    margin:0 0 6px;
+    margin:0 0 10px;
 
     display:block;
 
@@ -461,7 +467,7 @@ TAGLINE
 
     font-family:'Cinzel',serif;
 
-    font-size:24px;
+    font-size:25px;
 
     font-weight:700;
 
@@ -469,7 +475,7 @@ TAGLINE
 
     line-height:1.15;
 
-    letter-spacing:.5px;
+    letter-spacing:.4px;
 
     margin:6px 0 8px;
 
@@ -524,7 +530,7 @@ DESCRIPTION
 
     color:#555;
 
-    max-width:620px;
+    max-width:650px;
 
     margin-bottom:22px;
 
