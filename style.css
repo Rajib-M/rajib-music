@@ -418,7 +418,7 @@ HERO
 
     display:grid;
 
-    grid-template-columns:42% 58%;
+   grid-template-columns:48% 52%;
 
     align-items:start;
 
@@ -448,11 +448,11 @@ HERO LOGO
 =========================================================*/
 .hero-brand{
 
-    width:300px;
+    width:240px;
 
     max-width:100%;
 
-    margin:0 0 10px;
+    margin:0 0 12px;
 
     display:block;
 
@@ -467,7 +467,7 @@ TAGLINE
 
     font-family:'Cinzel',serif;
 
-    font-size:25px;
+    font-size:28px;
 
     font-weight:700;
 
@@ -475,7 +475,7 @@ TAGLINE
 
     line-height:1.15;
 
-    letter-spacing:.4px;
+    letter-spacing:.3px;
 
     margin:6px 0 8px;
 
@@ -565,9 +565,9 @@ RIGHT IMAGE
 
 .hero-right img{
 
-    width:100%;
+    width:88%;
 
-    max-width:640px;
+    max-width:580px;
 
     height:auto;
 
@@ -577,6 +577,7 @@ RIGHT IMAGE
 
     transition:.35s;
 
+}
 }
 
 .hero-buttons a{
