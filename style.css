@@ -422,14 +422,13 @@ HERO
 }
 
 .hero-left{
-
     max-width:650px;
-
+    margin:0 auto;
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
+    align-items:center;
+    text-align:center;
 
 }
 
@@ -568,7 +567,7 @@ RIGHT IMAGE
     transition:.35s;
 
 }
-}
+
 
 .hero-buttons a{
 
