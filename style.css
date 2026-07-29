@@ -1463,7 +1463,6 @@ MOBILE
 
         margin:20px auto 0;
     }
-}
 
 /*=========================================================
 END OF PART 2D
@@ -1477,25 +1476,23 @@ VIDEOS + CONTACT + CONNECT + FOOTER
 
 /*=========================================================
 LATEST VIDEOS
+MATCH TOP RATED SONG SIZE
 =========================================================*/
-
-.latest-videos{
-
-    background:#FCFAF6;
-
-    padding:55px 0;
-}
 
 .video-grid{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    grid-template-columns:repeat(auto-fit,220px);
 
-    gap:28px;
+    justify-content:center;
+
+    gap:30px;
 }
 
 .video-card{
+
+    width:220px;
 
     background:#FFFFFF;
 
@@ -1503,40 +1500,63 @@ LATEST VIDEOS
 
     overflow:hidden;
 
-    box-shadow:0 10px 28px rgba(0,0,0,.08);
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
 
     transition:.30s ease;
 }
 
 .video-card:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-6px);
 
-    box-shadow:0 16px 36px rgba(0,0,0,.12);
+    box-shadow:0 14px 34px rgba(0,0,0,.12);
 }
 
-.video-card iframe{
+.video-card img{
 
-    width:100%;
+    width:220px;
 
-    aspect-ratio:16/9;
+    height:220px;
 
-    border:none;
+    object-fit:cover;
 
     display:block;
 }
 
 .video-card h3{
 
-    padding:18px;
+    padding:16px 14px;
+
+    font-size:16px;
 
     text-align:center;
 
-    font-size:18px;
+    min-height:60px;
+}
 
-    line-height:1.5;
+@media (max-width:768px){
 
-    color:#222;
+    .video-grid{
+
+        grid-template-columns:1fr;
+
+        justify-items:center;
+
+        gap:22px;
+    }
+
+    .video-card{
+
+        width:220px;
+    }
+
+    .video-card img{
+
+        width:220px;
+
+        height:220px;
+    }
+
 }
 
 /*=========================================================
