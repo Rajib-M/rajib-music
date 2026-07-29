@@ -2048,38 +2048,3 @@ MOBILE
 /*==========================
 END OF VERSION 12
 ==========================*/
-
-}/* =========================================
-V13 - MOBILE PAGE CENTER FIX
-========================================= */
-
-html,
-body{
-    width:100%;
-    max-width:100%;
-    overflow-x:hidden;
-}
-
-@media (max-width:768px){
-
-    body{
-        overflow-x:hidden;
-    }
-
-    section,
-    .container,
-    .hero,
-    .hero-wrapper,
-    .hero-content,
-    .hero-text{
-        width:100%;
-        max-width:100%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-
-    img{
-        max-width:100%;
-        height:auto;
-    }
-}
