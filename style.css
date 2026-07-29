@@ -2048,12 +2048,30 @@ MOBILE
 /*==========================
 END OF VERSION 12
 ==========================*/
-
-
-}/*=========================================================
-VERSION 13 HERO - MOBILE
-=========================================================*/
 /*=========================================================
 VERSION 13 HERO - MOBILE
 =========================================================*/
 
+@media (max-width:768px){
+
+    html,
+    body{
+        margin:0;
+        padding:0;
+        width:100%;
+        max-width:100%;
+        overflow-x:hidden;
+    }
+
+    .hero,
+    .hero-wrapper,
+    .hero-content{
+        width:100%;
+        margin:0 auto;
+        padding-left:20px;
+        padding-right:20px;
+        text-align:center;
+        align-items:center;
+    }
+
+}
