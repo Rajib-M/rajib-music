@@ -224,15 +224,14 @@ HEADER
 
 .header{
 
-    position:sticky;
-
-    top:0;
+    position:relative;
 
     z-index:999;
 
     background:#fff;
 
     box-shadow:0 2px 14px rgba(0,0,0,.05);
+
 
 }
 
@@ -2821,15 +2820,6 @@ section{
 
     text-align:center;
 
-}
-
-.hero-wrapper,
-.release-wrapper,
-.about-wrapper{
-
-    grid-template-columns:1fr;
-
-    gap:40px;
 
 }
 
