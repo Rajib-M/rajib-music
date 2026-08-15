@@ -3071,4 +3071,37 @@ a{
 /*=========================================================
 END OF VERSION 15
 =========================================================*/
+    /* DESKTOP RESTORE FIX */
+
+@media (min-width:993px){
+
+.header{
+    position:sticky !important;
+    top:0 !important;
+}
+
+.hero-wrapper{
+    grid-template-columns:48% 52% !important;
+    gap:48px !important;
+}
+
+.release-wrapper{
+    grid-template-columns:360px 1fr !important;
+    gap:60px !important;
+}
+
+.about-wrapper{
+    grid-template-columns:340px 1fr !important;
+    gap:60px !important;
+}
+
+.hero-right{
+    order:initial !important;
+}
+
+.hero-brand{
+    width:240px !important;
+}
+
+}
 
